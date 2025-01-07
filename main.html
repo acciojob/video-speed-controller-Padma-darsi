@@ -1,27 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Video Speed Controller</title>
-  </head>
-  <body>
-    <div class="player">
-      <video class="player__video" src="https://www.w3schools.com/html/mov_bbb.mp4" width="750" height="420"></video>
-      <div class="controls">
-        <button class="player__button">►</button>
-        <input class="player__progress" type="range" value="0" max="100">
-        <span class="progress__filled"></span>
+<head>
+  <meta charset="UTF-8">
+  <title>Video Speed Scrubber</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-        <button class="player__skip rewind">« 10s</button>
-        <button class="player__skip forward">25s »</button>
-
-        <input class="player__volume" type="range" min="0" max="1" step="0.01" value="1">
-        <input class="player__speed" type="range" min="0.5" max="2" step="0.1" value="1">
-      </div>
+  <div class="wrapper">
+    <video class="player__video" width="765" height="430" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+    
+    <div class="controls">
+      <button class="player__button">►</button> <!-- Play/Pause Button -->
+      
+      <button class="player__skip rewind">« 10s</button> <!-- Rewind 10s Button -->
+      <button class="player__skip forward">25s »</button> <!-- Skip 25s Button -->
+      
+      <input type="range" class="progress" min="0" max="100" value="0"> <!-- Progress Bar -->
+      <div class="progress__filled"></div>
+      
+      <label for="volume">Volume:</label>
+      <input type="range" class="volume" id="volume" min="0" max="1" step="0.1" value="1">
+      
+      <label for="speed">Speed:</label>
+      <input type="range" class="playbackSpeed" id="speed" min="0.5" max="2" step="0.1" value="1">
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>

@@ -1,59 +1,35 @@
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #1e1e1e;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-.player {
-  position: relative;
-  margin: 20px auto;
-  width: 750px;
-}
-
-.player__video {
-  width: 100%;
-  height: auto;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .controls {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 10px;
+  margin-top: 20px;
 }
 
-.player__button,
-.player__skip {
-  background-color: #444;
-  border: none;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
+.player__video {
+  margin-bottom: 10px;
 }
 
-.player__button {
-  font-size: 20px;
+button, input {
+  margin: 5px;
 }
 
-.player__progress {
-  width: 60%;
-  margin: 0 20px;
+.progress {
+  width: 100%;
 }
 
 .progress__filled {
-  width: 0%;
+  background: #ff5733;
   height: 5px;
-  background-color: #00bcd4;
+  width: 0%;
 }
 
-.player__volume,
-.player__speed {
-  width: 100px;
+label {
+  font-size: 14px;
 }
 
-.player__skip {
-  font-size: 16px;
-}
