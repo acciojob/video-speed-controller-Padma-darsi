@@ -1,5 +1,4 @@
-
-   const video = document.querySelector('.player__video');
+const video = document.querySelector('.player__video');
 const playButton = document.querySelector('.player__button');
 const rewindButton = document.querySelector('.player__skip.rewind');
 const forwardButton = document.querySelector('.player__skip.forward');
