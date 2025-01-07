@@ -1,65 +1,59 @@
 
-/* Your CSS Code here. */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: #000;
+  background-color: #1e1e1e;
   color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
 .player {
-  max-width: 800px;
-  margin: 0 auto;
+  position: relative;
+  margin: 20px auto;
+  width: 750px;
 }
 
-.viewer {
+.player__video {
   width: 100%;
-  border: 1px solid #444;
+  height: auto;
 }
 
 .controls {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  background: #222;
   padding: 10px;
 }
 
-button {
-  background: none;
-  border: 1px solid #444;
-  color: #fff;
-  padding: 5px 10px;
-  margin: 5px;
+.player__button,
+.player__skip {
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 10px;
   cursor: pointer;
-  font-size: 16px;
 }
 
-button:hover {
-  background: #444;
+.player__button {
+  font-size: 20px;
 }
 
-.player__slider {
-  width: 150px;
-  margin: 5px;
-}
-
-.progress {
-  flex: 1;
-  height: 10px;
-  background: #333;
-  cursor: pointer;
-  margin: 0 10px;
-  position: relative;
+.player__progress {
+  width: 60%;
+  margin: 0 20px;
 }
 
 .progress__filled {
-  width: 0;
-  height: 100%;
-  background: #f00;
-  flex: 0;
+  width: 0%;
+  height: 5px;
+  background-color: #00bcd4;
+}
+
+.player__volume,
+.player__speed {
+  width: 100px;
+}
+
+.player__skip {
+  font-size: 16px;
 }
